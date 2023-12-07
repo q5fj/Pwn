@@ -79,6 +79,30 @@ gef➤ disassemble main
 
 #### So our function is main :)
 
+Now we need the appropriate offset:-
+#### Command :-
+```
+gef➤  pattern create 150
+```
+<img src="https://github.com/q5fj/Pwn/assets/88992167/0a1d8ee4-6bae-467f-a5d4-850eb59e6116">
+
+
+
+### Let's Start Exploiting 
+```
+import shutup; shutup.please()
+from pwn import *
+
+# elf = context.binary = ELF('./vuln')
+# io = elf.process()
+
+host =
+port = 
+io = remote(host, port)
+
+
+```
+
 
 
 
