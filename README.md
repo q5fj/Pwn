@@ -16,3 +16,7 @@ Also notice we have "gets" in the user input
 
 Now that have analyzed the source, let us move to the binary file:
 #### vuln
+```
+file vuln 
+```
+
