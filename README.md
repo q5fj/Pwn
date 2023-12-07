@@ -7,4 +7,5 @@ Let's start off simple, can you overflow the correct buffer?
 <img src="https://github.com/q5fj/Pwn/assets/88992167/76c5aa29-ee1d-4098-bd72-92e7207f575c">
 
 We note that in the code the binary file will not work unless the binary file path contains a file named flag.txt
+<img src="https://github.com/q5fj/Pwn/assets/88992167/0a7f786c-8fbc-4524-832f-c38b7a61fcf3">
 
