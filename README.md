@@ -105,8 +105,8 @@ from pwn import *
 # elf = context.binary = ELF('./vuln')
 # io = elf.process()
 
-host =
-port = 
+host = <HOST>
+port = <PORT>
 io = remote(host, port)
 
 offset = 25
