@@ -10,7 +10,7 @@ We note that in the code the binary file will not work unless the binary file pa
 <img src="https://github.com/q5fj/Pwn/assets/88992167/0a7f786c-8fbc-4524-832f-c38b7a61fcf3">
 
 Also notice we have "gets" in the user input 
-
+ 
 ##### gets - get a string from standard input (DEPRECATED)
 <img src="https://github.com/q5fj/Pwn/assets/88992167/0ae608e9-5726-4212-8449-47e2ea331cb7">
 
