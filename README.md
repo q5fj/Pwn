@@ -14,7 +14,7 @@ Also notice we have "gets" in the user input
 #### gets - get a string from standard input (DEPRECATED)
 <img src="https://github.com/q5fj/Pwn/assets/88992167/0ae608e9-5726-4212-8449-47e2ea331cb7">
 
-Now that have analyzed the source, let us move to the binary file:
+#### Now that have analyzed the source, let us move to the binary file:
 ### vuln
 #### Command :-
 ```
@@ -32,7 +32,7 @@ $ checksec vuln
 No stack canary, assume BOF.
 
 Let's run the file and see what happens.
-#### Don't forget to create a flag.txt file for the file to work :-
+#### Don't forget to create a flag.txt file for the binary to work :-
 ```
 echo "Flag{1234567890}" > flag.txt
 ```
@@ -56,7 +56,7 @@ We notice that the program printed the contents of the flag.txt file.
 
 
 
-Now let's start examining the file closely :)
+#### Now let's start examining the file closely :)
 
 I will use gdb tool
 ```
