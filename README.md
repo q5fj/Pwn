@@ -16,7 +16,8 @@ Also notice we have "gets" in the user input
 
 Now that have analyzed the source, let us move to the binary file:
 #### vuln
+#### Command :
 ```
 file vuln 
 ```
-
+<img src="https://github.com/q5fj/Pwn/assets/88992167/0b59e5e3-38cb-4508-926f-0961f43efe8e">
