@@ -40,6 +40,11 @@ and run the file:-
 ```
 ./vuln
 ```
+<img src="https://github.com/q5fj/Pwn/assets/88992167/1c98a2ec-7e8c-41d5-ab81-c8d787f95f6b">
+
+We also see the user input and the program exits :)
+
+If we remember that it uses the `gets` function, which is a dangerous function that leads to a buffer overflow because it does not read user input
 
 
 
