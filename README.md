@@ -119,9 +119,11 @@ io.recv()
 io.sendline(payload)
 io.interactive()
 
-
 ```
-
+### Then run the exploit and it will print the flag :)
+```
+$ python exploit.py
+```
 
 
 
