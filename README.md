@@ -18,14 +18,14 @@ Now that have analyzed the source, let us move to the binary file:
 #### vuln
 #### Command :-
 ```
-file vuln 
+$ file vuln 
 ```
 <img src="https://github.com/q5fj/Pwn/assets/88992167/0b59e5e3-38cb-4508-926f-0961f43efe8e">
 
 The file is 32 bit, let's check the security features : 
 #### Command :-
 ```
-checksec vuln 
+$ checksec vuln 
 ```
 <img src="https://github.com/q5fj/Pwn/assets/88992167/598555c8-43eb-48d6-a71e-04da7dcd334e">
 
@@ -38,7 +38,7 @@ echo "Flag{1234567890}" > flag.txt
 ```
 and run the file:-
 ```
-./vuln
+$ ./vuln
 ```
 <img src="https://github.com/q5fj/Pwn/assets/88992167/1c98a2ec-7e8c-41d5-ab81-c8d787f95f6b">
 
@@ -48,11 +48,12 @@ If we remember that it uses the `gets` function, which is a dangerous function t
 
 Let's try to enter a byte higher than 100
 ```
-python -c 'print("A" * 150)' | ./vuln
+$ python -c 'print("A" * 150)' | ./vuln
 ```
 We notice that the program printed the contents of the flag.txt file.
 
 <img src="https://github.com/q5fj/Pwn/assets/88992167/b67559bb-9639-4f40-998d-bc256754b291">
+
 
 
 Now let's start examining the file closely :)
@@ -64,8 +65,22 @@ gdb ./vuln -q
 I will display the functions inside the file 
 #### Command :-
 ```
-info functions
+gef➤ info functions
 ```
 <img src="https://github.com/q5fj/Pwn/assets/88992167/dc92ea00-d1dd-462f-9b60-d86e3432bb0e">
+
+
+Let's start by analyzing the main function
+#### Command :-
+```
+gef➤ disassemble main 
+```
+<img src="https://github.com/q5fj/Pwn/assets/88992167/0b24c7ef-295f-4493-b27e-7d0b74cd88cd">
+
+#### So our function is main :)
+
+
+
+
 
 
