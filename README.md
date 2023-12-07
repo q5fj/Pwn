@@ -44,8 +44,15 @@ and run the file:-
 
 We also see the user input and the program exits :)
 
-If we remember that it uses the `gets` function, which is a dangerous function that leads to a buffer overflow because it does not read user input
+If we remember that it uses the `gets` function, which is a dangerous function that leads to a buffer overflow because it does not read user input.
 
+Let's try to enter a byte higher than 100
+```
+python -c 'print("A" * 150)' | ./vuln
+```
+We notice that the program printed the contents of the flag.txt file.
+
+<img src="https://github.com/q5fj/Pwn/assets/88992167/b67559bb-9639-4f40-998d-bc256754b291">
 
 
 Now let's start examining the file closely :)
