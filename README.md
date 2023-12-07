@@ -60,7 +60,7 @@ Now let's start examining the file closely :)
 
 I will use gdb tool
 ```
-gdb ./vuln -q
+$ gdb ./vuln -q
 ```
 I will display the functions inside the file 
 #### Command :-
