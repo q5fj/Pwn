@@ -41,5 +41,6 @@ I will display the functions inside the file
 ```
 info functions
 ```
+<img src="https://github.com/q5fj/Pwn/assets/88992167/dc92ea00-d1dd-462f-9b60-d86e3432bb0e">
 
 
