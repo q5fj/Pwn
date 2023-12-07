@@ -28,7 +28,20 @@ The file is 32 bit, let's check the security features :
 checksec vuln 
 ```
 <img src="https://github.com/q5fj/Pwn/assets/88992167/598555c8-43eb-48d6-a71e-04da7dcd334e">
+
 No stack canary, assume BOF.
+
+Let's run the file and see what happens.
+#### Don't forget to create a flag.txt file for the file to work :-
+```
+echo "Flag{1234567890}" > flag.txt
+```
+and run the file:-
+```
+./vuln
+```
+
+
 
 Now let's start examining the file closely :)
 
